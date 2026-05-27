@@ -1,5 +1,27 @@
 audio-hash-marker
 
+CÀI LAB BẰNG IMODULE
+
+Trên máy Labtainer, mở terminal ngoài container và chạy lệnh sau để tải bài lab từ GitHub RAW:
+
+```
+imodule https://github.com/vuxvinh/KiThuatGiauTin/raw/main/audio-hash-marker.tar
+```
+
+Sau khi imodule tải xong, chạy lab bằng lệnh:
+
+```
+labtainer audio-hash-marker
+```
+
+Nếu muốn chạy lại lab từ đầu, dùng lệnh sau:
+
+```
+labtainer -r audio-hash-marker
+```
+
+Khi terminal container student mở ra, chạy ls để kiểm tra các file bài lab.
+
 MỤC TIÊU BÀI LAB
 
 Bài lab này hướng dẫn sinh viên giấu một thông điệp vào file WAV bằng kỹ thuật LSB, tự đánh dấu dữ liệu bằng marker AUDIO_SELF_MARK và kiểm tra toàn vẹn thông điệp bằng SHA-256.
